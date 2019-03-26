@@ -1,0 +1,97 @@
+body {
+    overflow-x: hidden;
+    font-family: Raleway, sans-serif;
+}
+#logo {
+    border-radius: 50%;
+    vertical-align: middle !important;
+}
+
+.logo-caption {
+    font-size: 20px;
+}
+
+.header-wrapper {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("../images/main-bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+.header p.lead{
+    font-size: 1.4em;
+}
+
+.nav-item-dif a {
+    height: 66px !important;
+    line-height: 45px;
+    border-radius: 10%;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.nav-item-dif a:hover {
+    animation: pulse-black .9s;
+    color: black !important;
+}
+
+.header-title {
+    margin-top: 20vh;
+}
+.social-icons-wrapper {
+    list-style: none;
+}
+.social-icons-wrapper a {
+    text-decoration: none;
+    color:black;
+    margin-top: 180px;
+}
+.social-icons {
+    padding-bottom: 3vh;
+}
+.read-more {
+    margin-top: 40vh;
+}
+.read-more-title a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.read-more-button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+.read-more-button:hover {
+    cursor: default;
+}
+.read-more-button i {
+    color: whitesmoke;
+}
+
+.section-work-wrapper{
+    background-color: #191919;
+    color: white;
+}
+.section-work {
+    padding-top: 5vh;
+}
+.section-work h4 {
+    font-size: 28px;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+.section-work-text {
+    padding-top: 5vh;
+}
+.section-work-text p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
