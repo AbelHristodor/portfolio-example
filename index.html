@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="header-wrapper">
+  <div class="header-wrapper" id="header-section">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active mr-5 brand">
-            <a class="nav-link href=" #"><img src="/assets/images/logo.jpg" width="50" height="50"
+            <a class="nav-link" href="#header-section"><img src="/assets/images/logo.jpg" width="50" height="50"
                 class="d-inline-block align-top" alt="Logo" id="logo" />
               <span class="logo-caption">Adrian Ciuica</span></a>
           </li>
@@ -69,34 +69,37 @@
         </div>
         <div class="col-md-8 header-title">
           <h2 class="display-3">Lorem Ipsum</h2>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Ea ad nostrud esse ea nulla ex ea ut in
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Ea ad nostrud esse ea nulla ex
+            ea ut in
             exercitation commodo commodo.</p>
         </div>
       </div>
-        <div class="row read-more-wrapper" >
-          <div class="col-md-6 mx-auto text-center">
-            <div class="read-more">
-              <h4 class="read-more-title smoothScroll">
-                <a href="#">Read more</a>
-              </h4>
-              <button type="button" class="read-more-button">
-                  <i class="fas fa-angle-double-down fa-3x"></i>
-              </button>
-            </div>
+      <div class="row read-more-wrapper">
+        <div class="col-md-6 mx-auto text-center">
+          <div class="read-more">
+            <h4 class="read-more-title">
+              <a href="#work-section" id="read-more-a">Read more</a>
+            </h4>
+            <button type="button" class="read-more-button">
+              <i class="fas fa-angle-double-down fa-3x"></i>
+            </button>
           </div>
         </div>
+      </div>
 
     </div>
   </div>
-  <div class="section-work-wrapper">
+  <div class="section-work-wrapper" id="work-section">
     <div class="section-work">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h4 class="display-3">My Work</h2>
-          <div class="section-work-text">
-            <p class="lead">Amet consectetur consectetur exercitation aute fugiat sint et aliquip irure consectetur sunt ipsum culpa aute.</p>
-            <p>Velit et fugiat do sint ad. Eu irure enim nulla eu velit anim consectetur Lorem. Non pariatur commodo in ex id veniam irure aliquip eiusmod ea aliquip ipsum.</p>
-          </div>
+            <div class="section-work-text">
+              <p class="lead">Amet consectetur consectetur exercitation aute fugiat sint et aliquip irure consectetur
+                sunt ipsum culpa aute.</p>
+              <p>Velit et fugiat do sint ad. Eu irure enim nulla eu velit anim consectetur Lorem. Non pariatur commodo
+                in ex id veniam irure aliquip eiusmod ea aliquip ipsum.</p>
+            </div>
         </div>
       </div>
     </div>
@@ -104,16 +107,17 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/js/home.js"></script>
 
 </body>
 

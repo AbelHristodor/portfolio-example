@@ -12,7 +12,9 @@ body {
 }
 
 .header-wrapper {
+    max-width: 100%;
     height: 100vh;
+    width: auto;
     min-height: 400px;
     background-size: cover;
     background-image: url("../images/main-bg.jpg");
@@ -32,6 +34,9 @@ body {
     border-radius: 10%;
     border-top: 0;
     border-bottom: 0;
+}
+.navbar {
+    padding: 0 !important;
 }
 
 .brand {
@@ -58,7 +63,7 @@ body {
     padding-bottom: 3vh;
 }
 .read-more {
-    margin-top: 40vh;
+    margin-top: 38%;
 }
 .read-more-title a {
     text-decoration: none;
