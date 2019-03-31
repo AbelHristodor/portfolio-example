@@ -20,18 +20,13 @@ $(document).ready(() => {
             $("nav:first").removeClass('bg-white')
         }
     });
-
-
-
-});
-lightGallery(document.getElementById('lightgallery'), {
-    download: false,
-    thumbnail: true,
-    animateThumb: true,
-    showThumbByDefault: true,
-    escKey: true,
 });
 
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+  
 const navbar_scroll = new SmoothScroll('.nav-item a[href*="#"]', {
     speed: 900,
     offset: 50
