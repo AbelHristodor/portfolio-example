@@ -1,14 +1,86 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+@media screen and (max-width: 320px) {
+  .navbar-toggler {
+    margin-left: 1.5vh;
+    margin-top: 1.3vh;
+    margin-bottom: .5vh;
+    border: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: white !important;
+  }
+  nav a.nav-link {
+    margin-left: 1vh;
+    padding-bottom: 0;
+  }
+  .header .header-wrapper {
+    height: 105vh;
+  }
+  .header .social-icons-wrapper {
+    display: none;
+  }
+  .header .header-title:first-of-type {
+    margin-top: 0;
+  }
+  .header .header-title h2 {
+    font-size: 5.5vh;
+  }
+  .header .header-title p.lead {
+    font-size: 3vh;
+  }
+  .header .header-title h2, .header .header-title p.lead {
+    padding-left: 2vh;
+  }
+  .read-more-wrapper .read-more {
+    margin-top: 68%;
+  }
+  .read-more-wrapper .read-more-title {
+    font-size: 3vh;
+  }
+  .section-work-wrapper .section-work h4 {
+    font-size: 4vh;
+  }
+  .section-work-wrapper .section-work p.lead {
+    font-size: 2.5vh;
+  }
+  .section-work-wrapper .section-work h4, .section-work-wrapper .section-work p, .section-work-wrapper .section-work p.lead {
+    margin-left: 1vh;
+  }
+  .section-gallery-wrapper h4 {
+    font-size: 4vh;
+  }
+  .section-gallery-wrapper p.lead {
+    font-size: 2.5vh;
+  }
+  .section-gallery-wrapper h4, .section-gallery-wrapper p, .section-gallery-wrapper p.lead {
+    margin-left: 1vh;
+  }
+  .section-gallery-wrapper #lightgallery {
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
+  .section-about-wrapper h4 {
+    font-size: 4vh;
+  }
+  .section-about-wrapper p.lead {
+    font-size: 2.5vh;
+  }
+  .section-about-wrapper .section-about h4, .section-about-wrapper .section-about p, .section-about-wrapper .section-about p.lead {
+    margin-top: 1.2vh;
+  }
+  footer .footer-social-icons {
+    font-size: 2vh;
+  }
+  footer .footer-social-icons a > li > i {
+    margin-right: 4vh !important;
+  }
+}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media screen and (min-width: 576px) {
+  .navbar-toggler {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    border: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
