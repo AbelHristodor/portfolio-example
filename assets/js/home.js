@@ -11,15 +11,20 @@ window.onload = function () {
 
 
 $(document).ready(() => {
-    var scroll_pos = 0
-    $(document).scroll(() => {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 100) {
-            $("nav:first").addClass('bg-white')
-        } else {
-            $("nav:first").removeClass('bg-white')
-        }
-    });
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        
+    } else {
+        var scroll_pos = 0
+        $(document).scroll(() => {
+            scroll_pos = $(this).scrollTop();
+            if (scroll_pos > 100) {
+                $("nav:first").addClass('bg-white')
+            } else {
+                $("nav:first").removeClass('bg-white')
+            }
+        });
+    }
+    
 });
 
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
