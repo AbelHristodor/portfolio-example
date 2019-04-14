@@ -69,8 +69,20 @@
   .section-about-wrapper .section-about h4, .section-about-wrapper .section-about p, .section-about-wrapper .section-about p.lead {
     margin-top: 1.2vh;
   }
+  footer .footer-social-icons-wrapper h6.mail a {
+    color: white;
+  }
+  footer .footer-social-icons-wrapper h6.mail a:hover {
+    color: white;
+  }
   footer .footer-social-icons {
     font-size: 2vh;
+  }
+  footer .footer-social-icons a {
+    color: white;
+  }
+  footer .footer-social-icons a:hover {
+    color: white;
   }
   footer .footer-social-icons a > li > i {
     margin-right: 4vh !important;
@@ -147,8 +159,20 @@
   .section-about-wrapper .section-about h4, .section-about-wrapper .section-about p, .section-about-wrapper .section-about p.lead {
     margin-top: 1.2vh;
   }
+  footer .footer-social-icons-wrapper h6.mail a {
+    color: white;
+  }
+  footer .footer-social-icons-wrapper h6.mail a:hover {
+    color: white;
+  }
   footer .footer-social-icons {
     font-size: 2vh;
+  }
+  footer .footer-social-icons a {
+    color: white;
+  }
+  footer .footer-social-icons a:hover {
+    color: white;
   }
   footer .footer-social-icons a > li > i {
     margin-right: 4vh !important;
@@ -225,8 +249,20 @@
   .section-about-wrapper .section-about h4, .section-about-wrapper .section-about p, .section-about-wrapper .section-about p.lead {
     margin-top: 1.2vh;
   }
+  footer .footer-social-icons-wrapper h6.mail a {
+    color: white;
+  }
+  footer .footer-social-icons-wrapper h6.mail a:hover {
+    color: white;
+  }
   footer .footer-social-icons {
     font-size: 2vh;
+  }
+  footer .footer-social-icons a {
+    color: white;
+  }
+  footer .footer-social-icons a:hover {
+    color: white;
   }
   footer .footer-social-icons a > li > i {
     margin-right: 4vh !important;
