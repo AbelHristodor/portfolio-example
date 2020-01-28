@@ -1,5 +1,12 @@
 # Portfolio Example
-An example of a portfolio made for a friend.
+Simple responsive portfolio example made in HTML5, CSS3 using also Bootstrap, animate.css, laxxx.js.
 
-Made in HTML & CSS
-Using Bootstrap, Fontawesome, and other libraries.
+
+## Screenshots:
+Home:
+
+![Homepage](/screenshots/home.jpg)
+
+Gallery:
+
+![Gallery](/screenshots/gallery.jpg)
