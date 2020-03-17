@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -8,7 +8,8 @@
   <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/normalize_reset.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -16,7 +17,6 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   <link rel="stylesheet" href="/assets/css/animate.css" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/home.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active mr-5 brand">
-            <a class="nav-link" href="#header-section"><img src="" width="50" height="50"
+            <a class="nav-link" href="#header-section"><img src="assets/images/logo.png" height="40"
                 class="d-inline-block align-top" alt="Logo" id="logo" />
               <span class="logo-caption">Your Name</span></a>
           </li>
@@ -88,9 +88,9 @@
             <h4 class="read-more-title">
               <a href="#work-section" id="read-more-a">Read more</a>
             </h4>
-            <button type="button" class="read-more-button">
+            <a type="button" class="read-more-button">
               <i class="fas fa-angle-double-down fa-3x"></i>
-            </button>
+</a>
           </div>
         </div>
         <div class="col-md-3"></div>
@@ -188,12 +188,11 @@
         </div>
         <div class="col-md-6">
           <h4 class="display-3 lax" data-lax-preset="fadeInOut driftRight-10">Who am I</h4>
-          <div class="section-about-text lax" data-lax-preset="fadeInOut driftLeft-10">
+          <div class="section-about-text lax" data-lax-preset="fadeInOut driftRight-10">
             <p class="lead">Adipisicing ipsum elit labore cillum et dolor proident est in quis officia.</p>
-            <p>Aliquip qui id dolor eu. Consectetur incididunt reprehenderit id aute nulla quis ad anim pariatur aliqua
-              ad eiusmod anim fugiat.</p>
-            <p>Esse elit eu nisi nostrud irure sunt est proident.</p>
-            <p>Qui cupidatat et labore ut laborum aliquip id cupidatat exercitation proident excepteur nostrud mollit
+            <p class="generic-text">Aliquip qui id dolor eu. Consectetur incididunt reprehenderit id aute nulla quis ad anim pariatur aliqua
+              ad eiusmod anim fugiat. Esse elit eu nisi nostrud irure sunt est proident.</p>
+            <p class="generic-text">Qui cupidatat et labore ut laborum aliquip id cupidatat exercitation proident excepteur nostrud mollit
               consequat.</p>
           </div>
         </div>
@@ -228,10 +227,6 @@
     </div>
   </footer>
 
-  <script>
-
-  </script>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -246,9 +241,8 @@
   </script>
   <script src="node_modules/lax.js/lib/lax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-  <script src="assets/js/home.js"></script>
+  <script src="assets/js/home.min.js"></script>
 
 </body>
-
 </html>
 

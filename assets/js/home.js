@@ -17,16 +17,19 @@ $(document).ready(() => {
         var scroll_pos = 0;
         var animation_begin_pos = 100;
         var animation_end_pos = $('#work-section').position().top;
-        console.log(animation_end_pos)
         var beginning_color = new jQuery.Color('rgba(255,255,255,0)');
         var ending_color = new jQuery.Color('rgba(255,255,255,1)');
+
         $(document).scroll(() => {
             scroll_pos = $(this).scrollTop();
             if (scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos) {
+    
                 var percentScrolled = scroll_pos / (animation_end_pos - animation_begin_pos);
                 var newAlpha = beginning_color.alpha() + (ending_color.alpha() - beginning_color.alpha()) * percentScrolled;
                 var newColor = new jQuery.Color([255, 255, 255, newAlpha]);
+                
                 $('.navbar').animate({ backgroundColor: newColor }, 0);
+
             } else if ( scroll_pos > animation_end_pos ) {
                 $('.navbar').animate({ backgroundColor: ending_color }, 0);
            } else if ( scroll_pos < animation_begin_pos ) {
