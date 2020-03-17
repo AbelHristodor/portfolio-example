@@ -42,14 +42,19 @@ body {
 
 .navbar {
     padding: 0 !important;
+    font-family: Montserrat, sans-serif;
 }
 
 .brand {
     cursor: pointer;
 }
 
+.nav-item-dif a {
+    transition: all .2s;
+}
+
 .nav-item-dif a:hover {
-    animation: pulse-black .9s;
+    transform: scale(1.1);
     color: black !important;
 }
 
@@ -65,8 +70,8 @@ body {
     text-decoration: none;
     color: black;
     margin-top: 180px;
-    transition: color .5s;
-    -webkit-transition: color .5s;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
 }
 
 .social-icons-wrapper a:hover {
@@ -137,7 +142,7 @@ body {
 
 #lightgallery a img {
     margin-bottom: 5px;
-    transition: color .5s;
+    transition: color 0.5s;
 }
 
 .section-about-wrapper {
@@ -170,7 +175,7 @@ body {
 .footer-social-icons-wrapper h6 a {
     color: white;
     text-decoration: none;
-    transition: color .5s;
+    transition: color 0.5s;
 }
 
 .footer-social-icons-wrapper h6.mail a:hover {
@@ -190,13 +195,16 @@ body {
     display: inline-block;
     text-decoration: none;
     color: white;
-    transition: color .5s;
-    -webkit-transition: color .5s;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
 }
 
 .footer-social-icons a:hover {
     color: rgb(114, 114, 114);
 }
-.col-md-6, .col-md-8, .col-sm-4, .col-md-10 {
+.col-md-6,
+.col-md-8,
+.col-sm-4,
+.col-md-10 {
     padding-right: 0;
 }
