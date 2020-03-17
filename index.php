@@ -239,7 +239,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
   </script>
-  <script src="node_modules/lax.js/lib/lax.min.js"></script>
+  <script src="assets/js/plugins/lax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   <script src="assets/js/home.min.js"></script>
 
