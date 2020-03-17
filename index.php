@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Your Name</title>
+  <title>Sup</title>
   <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   <link rel="stylesheet" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="/assets/css/home.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/home-responsive.css" />
 </head>
 
 <body>
@@ -44,6 +44,9 @@
           </li>
           <li class="nav-item nav-item-dif mr-4">
             <a class="nav-link" href="#gallery-section">Gallery</a>
+          </li>
+          <li class="nav-item nav-item-dif mr-4">
+            <a class="nav-link" href="pages/blog.php">Blog</a>
           </li>
           <li class="nav-item nav-item-dif mr-4">
             <a class="nav-link" href="#contact-section">Contact</a>
@@ -90,7 +93,7 @@
             </h4>
             <a type="button" class="read-more-button">
               <i class="fas fa-angle-double-down fa-3x"></i>
-</a>
+            </a>
           </div>
         </div>
         <div class="col-md-3"></div>
