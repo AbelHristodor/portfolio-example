@@ -1,5 +1,17 @@
 <?php 
-    session_destroy();
+    include('../api/db.php');
+
+    function get_image_url($id) {
+        global $conn;
+        $sql = "SELECT url FROM image WHERE id='".$id."'";
+        $res = $conn->query($sql);
+        $url = "";
+        while ($row = $res->fetch_assoc()) {
+            $url = $row['url'];
+        }
+        return $url;
+    }
+
 
 ?>
 
@@ -51,103 +63,31 @@
         <div class="col-md-3"></div>    
         <div class="col-md-6 blog-section">
             <div class="cards-wrapper">
-                <div class="row card blog-post my-4">
-                    <img class="card-img-top" src="https://i.picsum.photos/id/251/1200/768.jpg" alt="post image">
-                    <div class="card-body">
-                        <a class="card-title" href="#">Card title</a>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, sem eu cursus venenatis,
-                            leo turpis sodales ligula, vitae placerat ligula odio in dolor. Sed quis dui quis lectus condimentum ornare.
-                            Vivamus ut risus consequat, dapibus odio eu, vehicula elit. Maecenas rhoncus nibh eu ante fringilla eleifend.
-                            Vestibulum quis felis turpis.
-                            Fusce vel lectus eget augue finibus vehicula. Mauris consequat commodo faucibus.
-                        
-                        </p>
-                    </div>
-                    <div class="card-footer meta-section">
-                        <p class="text-muted meta-data">Posted By <strong>Abel</strong> on 23/02/2020</p>
-                    </div>
-                </div>
+                <?php 
+                    $res = $conn->query("SELECT * FROM post ORDER BY published_at DESC");
+                    while($row = $res->fetch_assoc()) { ?>
 
-                <div class="row card blog-post my-4">
-                    <img class="card-img-top" src="https://i.picsum.photos/id/251/1200/768.jpg" alt="post image">
-                    <div class="card-body">
-                        <a class="card-title" href="#">Card title</a>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, sem eu cursus venenatis,
-                            leo turpis sodales ligula, vitae placerat ligula odio in dolor. Sed quis dui quis lectus condimentum ornare.
-                            Vivamus ut risus consequat, dapibus odio eu, vehicula elit. Maecenas rhoncus nibh eu ante fringilla eleifend.
-                            Vestibulum quis felis turpis.
-                            Fusce vel lectus eget augue finibus vehicula. Mauris consequat commodo faucibus.
-                        
-                        </p>
-                    </div>
-                    <div class="card-footer meta-section">
-                        <p class="text-muted meta-data">Posted By <strong>Abel</strong> on 23/02/2020</p>
-                    </div>
-                </div>
+                        <div class="row card blog-post my-4">
+                            <img class="card-img-top" src="..<?php echo get_image_url($row['image']); ?>" alt="post image">
+                            <div class="card-body">
+                                <a class="card-title" href="#"><?php echo $row['title']; ?></a>
+                                <p class="card-text">
+                                    <?php echo $row['summary']; ?> [...]
+                                </p>
+                            </div>
+                            <div class="card-footer meta-section">
+                                <p class="text-muted meta-data">Posted By <strong>
+                                    <?php
+                                        $result = $conn->query("SELECT first_name, last_name FROM user where id='".$row['author_id']."'");
+                                        while ($usr_row = $result->fetch_assoc()) {
+                                            echo "{$usr_row['first_name']} {$usr_row['last_name']}";
+                                        }
+                                    ?>
+                                </strong> on <?php echo $row['published_at']; ?></p>
+                            </div>
+                        </div>
+                    <?php }?>
 
-
-                <div class="row card blog-post my-4">
-                    <img class="card-img-top" src="https://i.picsum.photos/id/251/1200/768.jpg" alt="post image">
-                    <div class="card-body">
-                        <a class="card-title" href="#">Card title</a>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, sem eu cursus venenatis,
-                            leo turpis sodales ligula, vitae placerat ligula odio in dolor. Sed quis dui quis lectus condimentum ornare.
-                            Vivamus ut risus consequat, dapibus odio eu, vehicula elit. Maecenas rhoncus nibh eu ante fringilla eleifend.
-                            Vestibulum quis felis turpis.
-                            Fusce vel lectus eget augue finibus vehicula. Mauris consequat commodo faucibus.
-                        
-                        </p>
-                    </div>
-                    <div class="card-footer meta-section">
-                        <p class="text-muted meta-data">Posted By <strong>Abel</strong> on 23/02/2020</p>
-                    </div>
-                </div>
-
-
-                <div class="row card blog-post my-4">
-                    <img class="card-img-top" src="https://i.picsum.photos/id/251/1200/768.jpg" alt="post image">
-                    <div class="card-body">
-                        <a class="card-title" href="#">Card title</a>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, sem eu cursus venenatis,
-                            leo turpis sodales ligula, vitae placerat ligula odio in dolor. Sed quis dui quis lectus condimentum ornare.
-                            Vivamus ut risus consequat, dapibus odio eu, vehicula elit. Maecenas rhoncus nibh eu ante fringilla eleifend.
-                            Vestibulum quis felis turpis.
-                            Fusce vel lectus eget augue finibus vehicula. Mauris consequat commodo faucibus.
-                        
-                        </p>
-                    </div>
-                    <div class="card-footer meta-section">
-                        <p class="text-muted meta-data">Posted By <strong>Abel</strong> on 23/02/2020</p>
-                    </div>
-                </div>
-
-
-                <div class="row card blog-post my-4">
-                    <img class="card-img-top" src="https://i.picsum.photos/id/251/1200/768.jpg" alt="post image">
-                    <div class="card-body">
-                        <a class="card-title" href="#">Card title</a>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, sem eu cursus venenatis,
-                            leo turpis sodales ligula, vitae placerat ligula odio in dolor. Sed quis dui quis lectus condimentum ornare.
-                            Vivamus ut risus consequat, dapibus odio eu, vehicula elit. Maecenas rhoncus nibh eu ante fringilla eleifend.
-                            Vestibulum quis felis turpis.
-                            Fusce vel lectus eget augue finibus vehicula. Mauris consequat commodo faucibus.
-                        
-                        </p>
-                    </div>
-                    <div class="card-footer meta-section">
-                        <p class="text-muted meta-data">Posted By <strong>Abel</strong> on 23/02/2020</p>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -200,7 +140,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="assets/js/plugins/jquery_color.js"></script>
+    <script src="../assets/js/plugins/jquery_color.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>

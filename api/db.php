@@ -1,8 +1,8 @@
 <?php 
-    $username = "abel";
+    $username = "port_abel";
     $servername = "localhost";
     $password = "lel";
-    $database = "test";
+    $database = "blog";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
