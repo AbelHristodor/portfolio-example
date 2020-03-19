@@ -1,17 +1,8 @@
 <?php 
     include('../api/db.php');
-
-    function get_image_url($id) {
-        global $conn;
-        $sql = "SELECT url FROM image WHERE id='".$id."'";
-        $res = $conn->query($sql);
-        $url = "";
-        while ($row = $res->fetch_assoc()) {
-            $url = $row['url'];
-        }
-        return $url;
-    }
-
+    include('../api/functions.php');
+    
+    $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
 
 ?>
 
@@ -37,12 +28,12 @@
 <body>
     <div class="header-wrapper">
         <nav class="navbar navbar-expand-lg navbar-light static-top">
-            <a href="../index.php" class="go-back-button nav-link">
+            <a href="<?php echo $go_back_link; ?>" class="go-back-button nav-link">
                 <i class="fas fa-angle-double-left mr-1"></i> Go back
             </a>    
         </nav>
         <div class="row">
-            <a class="logo-wrapper m-auto" href="../index.php">
+            <a class="logo-wrapper m-auto" href="../">
                 <img src="../assets/images/logo.png" alt="SUP logo" id="logo">
             </a>
         </div>
@@ -70,7 +61,7 @@
                         <div class="row card blog-post my-4">
                             <img class="card-img-top" src="..<?php echo get_image_url($row['image']); ?>" alt="post image">
                             <div class="card-body">
-                                <a class="card-title" href="#"><?php echo $row['title']; ?></a>
+                                <a class="card-title" href="/pages/single_post.php?from=/pages/blog.php&post_id=<?php echo $row["id"]; ?>"><?php echo $row['title']; ?></a>
                                 <p class="card-text">
                                     <?php echo $row['summary']; ?> [...]
                                 </p>

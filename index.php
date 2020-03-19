@@ -49,7 +49,7 @@
             <a class="nav-link" href="#gallery-section">Gallery</a>
           </li>
           <li class="nav-item nav-item-dif mr-4">
-            <a class="nav-link" href="pages/blog.php">Blog</a>
+            <a class="nav-link" href="pages/blog.php?from=/">Blog</a>
           </li>
           <li class="nav-item nav-item-dif mr-4">
             <a class="nav-link" href="#contact-section">Contact</a>
