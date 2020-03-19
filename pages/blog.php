@@ -59,7 +59,7 @@
                     while($row = $res->fetch_assoc()) { ?>
 
                         <div class="row card blog-post my-4">
-                            <img class="card-img-top" src="..<?php echo get_image_url($row['image']); ?>" alt="post image">
+                            <img class="card-img-top" src="<?php echo get_image_url($row['image']); ?>" alt="post image">
                             <div class="card-body">
                                 <a class="card-title" href="/pages/single_post.php?from=/pages/blog.php&post_id=<?php echo $row["id"]; ?>"><?php echo $row['title']; ?></a>
                                 <p class="card-text">
@@ -84,6 +84,10 @@
         </div>
 
         <div class="col-md-3">
+            <div class="add-post-wrapper ml-2">
+                <p class="lead">Have something to say? <br>Add a new blog post.</p>
+                <?php include('add_new_modal.php'); ?>
+            </div>
             <ul class="social-icons-wrapper">
                 <a href="#">
                 <li><i class="fab fa-facebook fa-2x social-icons"></i></li>
