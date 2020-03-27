@@ -1,7 +1,8 @@
 $(document).ready(() => {
+    console.log("Sono QUi")
     $('#submit_button').click((e) => {
         e.preventDefault();
-
+        console.log("CLickkk");
         var fd = new FormData();
 
         const title = $('#title_input').val();
@@ -21,6 +22,7 @@ $(document).ready(() => {
             contentType: false,
             processData: false,
             success: (data) => {
+                console.log("Success " + data);
                 if (data.success) {
                     $('#add_new_form').empty();
                     location.reload();
