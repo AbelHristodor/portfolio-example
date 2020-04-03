@@ -28,10 +28,10 @@ $(document).ready(() => {
                         location.reload();
                         break;
                     case 1:
-                        $('#modal-error').html("Le dimensioni dell'immagine non può superare 2MB").show();
+                        $('#modal-error').html("Le dimensioni dell'immagine non possono superare 2MB").show();
                         break;
                     case 2:
-                        $('#modal-error').html("Le dimensioni dell'immagine non può superare 2MB").show();
+                        $('#modal-error').html("Le dimensioni dell'immagine non possono superare 2MB").show();
                         break;
                     case 4:
                         $('#modal-error').html("Errore nel caricamento dell'immagine").show();
