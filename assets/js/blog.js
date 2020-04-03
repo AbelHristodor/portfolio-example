@@ -1,8 +1,8 @@
 $(document).ready(() => {
-    console.log("Sono QUi")
+    $('#modal-error').hide();
+
     $('#submit_button').click((e) => {
         e.preventDefault();
-        console.log("CLickkk");
         var fd = new FormData();
 
         const title = $('#title_input').val();
@@ -22,11 +22,24 @@ $(document).ready(() => {
             contentType: false,
             processData: false,
             success: (data) => {
-                console.log(data);
-                if (data.success) {
-                    $('#add_new_form').empty();
-                    location.reload();
+                switch (data.success) {
+                    case true:
+                        $('#add_new_form').empty();
+                        location.reload();
+                        break;
+                    case 1:
+                        $('#modal-error').html("Le dimensioni dell'immagine non può superare 2MB").show();
+                        break;
+                    case 2:
+                        $('#modal-error').html("Le dimensioni dell'immagine non può superare 2MB").show();
+                        break;
+                    case 4:
+                        $('#modal-error').html("Errore nel caricamento dell'immagine").show();
+                        break;
+                    default:
+                        $('#modal-error').show();
                 }
+                
             },
             error: (err) => {
                 console.log(err);

@@ -9,6 +9,10 @@
         <h5 class="modal-title" id="addPostLabel">Add new Blog Post</h5>
       </div>
       <div class="modal-body">
+        <div id="modal-error" class="alert alert-danger alert-dismissible"  role="alert">
+            <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i>
+            C'è stato un errore, riprova più tardi. Se l'errore persiste contatta l'amministratore.
+        </div>
         <form method="POST" id="add_new_form">
             <div class="form-group">
                 <label for="title_input">Title</label>

@@ -36,12 +36,12 @@
                 }
             } else {
                 header("Content-Type: application/json; charset=UTF-8");
-                echo json_encode(array("lel" => $success));
+                echo json_encode(array("error" => $success));
             }
         } else {
             $success = $_FILES["image"]["error"];
             header("Content-Type: application/json; charset=UTF-8");
-            echo json_encode(array("lal" => $success));
+            echo json_encode(array("error" => $success));
         }
     }
 ?>
