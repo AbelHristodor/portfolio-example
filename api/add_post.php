@@ -39,7 +39,7 @@
                 echo json_encode(array("lel" => $success));
             }
         } else {
-            $success = false;
+            $success = $_FILES["image"]["error"];
             header("Content-Type: application/json; charset=UTF-8");
             echo json_encode(array("lal" => $success));
         }

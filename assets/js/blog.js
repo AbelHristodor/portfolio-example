@@ -22,7 +22,7 @@ $(document).ready(() => {
             contentType: false,
             processData: false,
             success: (data) => {
-                console.log("Success " + data);
+                console.log(data);
                 if (data.success) {
                     $('#add_new_form').empty();
                     location.reload();
