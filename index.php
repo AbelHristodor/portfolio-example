@@ -74,6 +74,9 @@
           <li class="nav-item nav-item-dif mr-4">
             <a class="nav-link" href="#contact-section">Contact</a>
           </li>
+          <li class="nav-item nav-item-dif mr-4">
+            <a class="nav-link" href="pages/code.php?from=/">View Code</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -131,7 +134,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-8 mx-auto">
           <h4 class="display-3 lax" data-lax-preset="fadeInOut driftRight-10">My Work</h4>
-          <div class="section-work-text lax" data-lax-preset="fadeInOut driftLeft-10">
+          <div class="section-work-text lax" data-lax-preset="fadeIn driftLeft-10">
             <p class="lead">Amet consectetur consectetur exercitation aute fugiat sint et aliquip irure consectetur
               sunt ipsum culpa aute.</p>
             <p>Velit et fugiat do sint ad. Eu irure enim nulla eu velit anim consectetur Lorem. Non pariatur commodo
@@ -139,6 +142,23 @@
           </div>
         </div>
         <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 col-sm-12">
+            <table class="table table-dark git-table mt-4">
+                <thead>
+                    <tr>
+                    <th scope="col">Language</th>
+                    <th scope="col">Repository</th>
+                    <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
   </div>
@@ -267,7 +287,7 @@
   </script>
   <script src="assets/js/plugins/lax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-  <script src="assets/js/home.min.js"></script>
+  <script src="assets/js/home.js"></script>
 
 </body>
 </html>

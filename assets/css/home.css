@@ -218,3 +218,15 @@ body {
 .col-md-10 {
     padding-right: 0;
 }
+
+.git-table {
+    background-color: #191919;
+}
+
+.git-table tbody tr td  {
+    color: whitesmoke;
+}
+
+.git-table tbody>tr>:nth-child(1){ 
+    font-style: italic;
+}
