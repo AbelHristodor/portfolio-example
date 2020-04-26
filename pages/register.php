@@ -1,6 +1,9 @@
 <?php 
+    if(isset($_SESSION)) {
+        session_destroy();
+    }
 
-$go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
+    $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
 
 ?>
 <!DOCTYPE html>
@@ -58,13 +61,21 @@ $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <form>
                         <div class="form-group">
+                            <label for="firstNameInput">First Name</label>
+                            <input type="text" name="first_name" class="form-control" id="firstNameInput" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastNameInput">Last Name</label>
+                            <input type="text" name="last_name" class="form-control" id="lastNameInput" placeholder="Enter last name">
+                        </div>
+                        <div class="form-group">
                             <label for="emailInput">Email address</label>
-                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" name="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
                             <small id="emailHelp" class="form-text text-muted" style="color:white !important;">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
                             <label for="passwordInput">Password</label>
-                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="passwordInput" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <label for="passwordInput">Conferma Password</label>
@@ -100,5 +111,9 @@ $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
         }
 
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../assets/js/register.js"></script>
 </body>
 </html>

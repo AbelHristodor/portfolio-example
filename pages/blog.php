@@ -1,9 +1,18 @@
 <?php 
     include('../api/db.php');
     include('../api/functions.php');
-    
+    $access = false;
+
     $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
-    if(!isset($_GET['logged_in']) || !$_GET['logged_in']) {
+
+    if(!isset($_GET['logged_in'])){
+        header("location: /pages/login.php");
+    } else if ( !$_GET['logged_in']){
+        header("location: /pages/login.php");
+    } else if($_GET['logged_in']) {
+        session_start();
+        $_SESSION['logged'] = true;
+    } else if(!isset($_SESSION['logged']) && !$_SESSION['logged']){
         header("location: /pages/login.php");
     }
 
