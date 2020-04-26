@@ -3,6 +3,9 @@
     include('../api/functions.php');
     
     $go_back_link = isset($_GET['from']) ? $_GET['from'] : "/";
+    if(!isset($_GET['logged_in']) || !$_GET['logged_in']) {
+        header("location: /pages/login.php");
+    }
 
 ?>
 

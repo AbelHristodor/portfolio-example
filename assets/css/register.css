@@ -1,0 +1,29 @@
+* {
+    max-width: 100%;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background-image: url('../images/register_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+hr {
+    width: 20%;
+    border: 1px solid lightgrey;
+}
+
+.register-wrapper {
+    margin-top: 5vh;
+    padding: 3vh 0vh;
+    border: 1px solid black;
+    z-index: 2 !important;
+
+}
