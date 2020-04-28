@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="description_input">Description</label>
-                <textarea type="text" class="form-control" id="description_input" name="description_input" placeholder="Enter your Blog Post Description" maxlength="254"></textarea>
+                <textarea type="text" class="form-control" id="description_input" name="description_input" placeholder="Enter your Blog Post Description"></textarea>
             </div>
             <div class="form-group">
                 <label for="image_input">Select Blog Post Image</label>
