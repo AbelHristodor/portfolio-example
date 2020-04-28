@@ -16,19 +16,19 @@
         <form method="POST" id="add_new_form">
             <div class="form-group">
                 <label for="title_input">Title</label>
-                <input type="text" class="form-control" id="title_input" name="title_input" placeholder="Enter Blog Post title">
+                <input type="text" class="form-control" id="title_input" name="title_input" placeholder="Enter Blog Post title" required>
             </div>
             <div class="form-group">
                 <label for="summary_input">Summary</label>
-                <textarea type="text" class="form-control" id="summary_input" name="summary_input" placeholder="Enter Blog Post summary" maxlength="254"></textarea>
+                <textarea type="text" class="form-control" id="summary_input" name="summary_input" placeholder="Enter Blog Post summary" maxlength="254" required></textarea>
             </div>
             <div class="form-group">
                 <label for="description_input">Description</label>
-                <textarea type="text" class="form-control" id="description_input" name="description_input" placeholder="Enter your Blog Post Description"></textarea>
+                <textarea type="text" class="form-control" id="description_input" name="description_input" placeholder="Enter your Blog Post Description" required></textarea>
             </div>
             <div class="form-group">
                 <label for="image_input">Select Blog Post Image</label>
-                <input type="file" class="form-control-file" id="image_input" accept="image/*">
+                <input type="file" class="form-control-file" id="image_input" accept="image/*" required>
             </div>
             <button type="submit" class="btn btn-primary" id="submit_button">Submit</button>
         </form>
